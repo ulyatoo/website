@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #fde0ca;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.all {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.main_sect {
+    font-family: "Press Start 2P", system-ui;
+    
+    background-image: url('https://i.pinimg.com/originals/28/98/54/289854dae67ede707890974d5b209100.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    border-radius: 40px;
+    background-color: #FFF8F0;
+    border: 3px solid black;
+    
+}
+
+.main_sect div {
+    padding-top: 80px;
+    padding-left: 130px;
+}
+
+h1{
+    font-size: 120px;
+}
+
+p {
+    font-size: 24px;
+    color: ;
+}
+
+h2 {
+    font-size: 36px;
+    color: ;
+}
+
+a {
+    font-size: 24px;
+}
+
+.main_container h2 {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 79px;
+    border-radius: 8px;
+    margin-top: 40px;
+    font-size: 24px;
+    padding: 1em;
+    background-color: black;
+    color: #F6A462;
+    text-decoration: none;
+    transition-property: background-color, border-radius;
+    transition-duration: 1s;
+}
+
+.btn:hover {
+    transition-property: background-color, border-radius;
+    background-color: #340069;
+    transition-duration: 0.5s;
+    border-radius: 20px;
+}
+
+.func_cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    width: 50%;
+
+}
+
+.func_container {
+    
+    background-color: #340069;
+}
+
+.func_text {
+    margin-top: 114px;
+    margin-bottom: 64px;
+    width: 1921px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    margin-left: 96px;
+    color: #F6A462;
+}
+
+.card_num {
+    font-size: 40px;
+    border: 5px solid #340069;
+    border-radius: 180px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #F6A462;
+    background-color: #340069;
+}
+
+.card_text {
+    margin-left: 15px;
+}
+
+
+/*Стили редактора**/
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+    opacity: 0;
+}
+
+.field-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: antiquewhite;
+    margin: auto;
+}
+
+.field {
+    width: 80vw;
+    height: 40vw;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: 1px;
+    background-color: rgb(48, 47, 47);
+}
+
+.cell {
+    background-color:rgb(26, 25, 25);
+    transition: background-color 0.6s ease;
+}
+
+.color-palette {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgb(26, 25, 25);
+}
+
+.color-cell,
+img {
+    width: 20px;
+    height: 20px;
+    
+}
+
+.red {
+    background-color: rgb(255, 102, 46);
+}
+.green {
+    background-color: rgb(26, 218, 84);
+}
+.blue {
+    background-color: rgb(83, 15, 255);
+}
+.yellow {
+    background-color: rgb(255, 236, 26);
+}
+.skyblue {
+    background-color: rgb(142, 229, 255);
+}
+
+.selected {
+    outline: 2px solid white;
+}
+
+.color-cell,
+.tool-cell {
+    cursor: pointer;
+}
